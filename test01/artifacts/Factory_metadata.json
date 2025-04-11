@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "callSayHello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_phrase",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "callSetLang",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createHelloWorld",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test01/factory.sol": "Factory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test01/factory.sol": {
+			"keccak256": "0xc54b077e437b32f073d16b08b2158330f75b80b2a41c9a73616055894a328102",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6989cb9fb6e3a1b64549868929463897319c766a4d2480f0f49f3bab0488ee58",
+				"dweb:/ipfs/QmaSvtav7uc5ByqLHXX5Uc9UzucisZzXrED8WyU5oFjG6T"
+			]
+		},
+		"test01/helloworld.sol": {
+			"keccak256": "0xed9276759efa007d103a605094b418bfa4e4a2dc6a8413a9ff488baa09d7cd59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4194d5434d52ac062e317e54e8417cb45e53add3c9bc09c59cd08bfda612b970",
+				"dweb:/ipfs/QmXzhdwHnW4MH5qpRtzwxZjGboxDqHJVFvC49cmxS6BoJd"
+			]
+		}
+	},
+	"version": 1
+}
