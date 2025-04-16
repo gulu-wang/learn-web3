@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_lockTime",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -47,25 +53,6 @@
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "funders",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -118,6 +105,44 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_erc20Addr",
+						"type": "address"
+					}
+				],
+				"name": "setErc20Addr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "funder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountToUpdate",
+						"type": "uint256"
+					}
+				],
+				"name": "setFundsAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -174,11 +199,11 @@
 			]
 		},
 		"test02/FundMe.sol": {
-			"keccak256": "0xe6a92e69cb50cd1743420a61a9f2b7449ae06af2e433c271d5cdeb0ae42de92f",
+			"keccak256": "0x78b26b26a49b88bbaf5749bd50777a429699d7298d8afd5e5a39555bb8a216dc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://904f5a23e5d859b4714cd207b51c1f16a82ae1be0e4d5ff6ea33907e408f2530",
-				"dweb:/ipfs/QmfAZ94UHJKD4URRAg4p8CW8LCxpMqa4hJSjLEDDKdyJUj"
+				"bzz-raw://533cbdd807f333d96894881d76513d8c28346eba7206f27819604e7fa00d160d",
+				"dweb:/ipfs/QmUgTaMeuGyuhJA9CSrra1HSV3nq93VGCKCCw3pWtaLvHt"
 			]
 		}
 	},

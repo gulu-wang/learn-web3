@@ -22,11 +22,17 @@ contract HelloWorld {
        Lang memory lang = Lang(_phrase, _id , msg.sender);
        langMapping[_id] = lang;
     }
-    function getLang(uint id) public view returns (string memory){
+    function getLang(uint id) public view returns (string memory) {
         return string.concat(langMapping[id].phrase, ", this's from kien");
     }
     
     function yunsuan() public pure  returns (uint) {
         return  1 + 1;
     }
+}
+// 继承 ，使用is关键字进行继承
+// 除了 private 声明的变量不能继承，其他关键字声明的都可以继承
+// 如果被继承的合约有构造函数时，需要执行构造函数
+contract HelloWorldTest is HelloWorld {
+    // constructor() HelloWorld("") {}
 }
