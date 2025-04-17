@@ -96,6 +96,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "isGetFund",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -176,7 +189,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test02/FundMe.sol": "FundMe"
+			"test02/FundMe_flattened.sol": "FundMe"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -190,20 +203,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
-			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+		"test02/FundMe_flattened.sol": {
+			"keccak256": "0x89fbac9fe243ab98dd673dc1b3338e41fc15551d76224b75f3f7cc372ae57c63",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
-				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
-			]
-		},
-		"test02/FundMe.sol": {
-			"keccak256": "0x78b26b26a49b88bbaf5749bd50777a429699d7298d8afd5e5a39555bb8a216dc",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://533cbdd807f333d96894881d76513d8c28346eba7206f27819604e7fa00d160d",
-				"dweb:/ipfs/QmUgTaMeuGyuhJA9CSrra1HSV3nq93VGCKCCw3pWtaLvHt"
+				"bzz-raw://6cdc6f8efd0ecaadbe5146059c50d56b3f1004a81ef44ac0bc53d35b69a7e3b1",
+				"dweb:/ipfs/QmYe66Sohe9x6Bxr7h8zwGZnanYCohC2d1U3EME6SWsTfQ"
 			]
 		}
 	},
