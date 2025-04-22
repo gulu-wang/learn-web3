@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 // require("@chainlink/env-enc").config();
 require("dotenv").config();
 require("./tasks");
+require("hardhat-deploy");
 
 const { SEPOLIA_RPC_URL, PRIVATE_KEY, PRIVATE_KEY_1, ETHERSCAN_API_KEY } =
   process.env;
@@ -24,6 +25,14 @@ module.exports = {
   },
   etherscan: {
     apiKey: { sepolia: ETHERSCAN_API_KEY },
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0,
+    },
+    user1: {
+      default: 1,
+    },
   },
   // sourcify: {
   //   enabled: true,

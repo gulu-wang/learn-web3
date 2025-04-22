@@ -1,5 +1,6 @@
 module.exports = async ({ getNamedAccounts, deployments }) => {
-  const { deployer } = await getNamedAccounts();
+  const { deployer, user1 } = await getNamedAccounts();
+
   await deployments.deploy("FundMe", {
     from: deployer,
     args: [300],

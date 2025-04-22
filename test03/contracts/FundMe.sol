@@ -13,7 +13,7 @@ contract FundMe {
     uint256 constant MININUM_VALUE = 100 * 10 ** 18; // 100 usd
     uint256 public constant TARGET = 1000 * 10 ** 18;
     address public owner;
-    AggregatorV3Interface internal dataFeed;
+    AggregatorV3Interface public dataFeed;
 
     uint256 deployTime;
     uint lockTime;
