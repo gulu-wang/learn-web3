@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("@chainlink/env-enc").config();
+// require("@chainlink/env-enc").config();
+require("dotenv").config();
 require("./tasks");
 
 const { SEPOLIA_RPC_URL, PRIVATE_KEY, PRIVATE_KEY_1, ETHERSCAN_API_KEY } =
@@ -12,7 +13,7 @@ setGlobalDispatcher(proxyAgent);
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  defaultNetwork: "sepolia",
+  defaultNetwork: "hardhat",
   solidity: "0.8.28",
   networks: {
     sepolia: {
@@ -27,4 +28,7 @@ module.exports = {
   // sourcify: {
   //   enabled: true,
   // },
+  mocha: {
+    timeout: 300000,
+  },
 };
