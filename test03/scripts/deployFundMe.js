@@ -15,8 +15,8 @@ async function main() {
     `contract has been deployed successfully, contract address is ${fundMe.target}`
   );
   if (hre.network.config.chainId == 11155111 && process.env.ETHERSCAN_API_KEY) {
-    console.log("Waiting for 6 block confirmations...");
-    await fundMe.deploymentTransaction().wait(6); // 等待6个区块确认
+    console.log("Waiting for 5 block confirmations...");
+    await fundMe.deploymentTransaction().wait(5); // 等待5个区块确认
 
     await hre.run("verify:verify", {
       address: fundMe.target,

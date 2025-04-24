@@ -20,11 +20,9 @@ contract FundMe {
     address erc20Addr;
     bool public isGetFund = false;
 
-    constructor(uint256 _lockTime) {
+    constructor(uint256 _lockTime, address _dataFeedAddr) {
         owner = msg.sender;
-        dataFeed = AggregatorV3Interface(
-            0x694AA1769357215DE4FAC081bf1f309aDC325306
-        );
+        dataFeed = AggregatorV3Interface(_dataFeedAddr);
         deployTime = block.timestamp;
         lockTime = _lockTime;
     }
